@@ -14,7 +14,6 @@ const Form = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('Form submetido')
     }
 
     return (
