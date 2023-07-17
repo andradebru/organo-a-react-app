@@ -18,7 +18,7 @@ const Form = () => {
                 <TextField label="Nome" placeholder="Digite seu nome"/>
                 <TextField label="Cargo" placeholder="Digite seu cargo"/>
                 <TextField label="Imagem" placeholder="Digite o endereço da imagem"/>
-                <DropdownList itens={teams}/>
+                <DropdownList label="Time" itens={teams}/>
             </form>
         </section>
     )
