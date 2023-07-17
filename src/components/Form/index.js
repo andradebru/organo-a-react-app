@@ -1,6 +1,7 @@
 import './Form.css'
 import TextField from '../TextField'
 import DropdownList from '../DropdownList'
+import TheFormButton from '../FormButton'
 
 const Form = () => {
 
@@ -19,6 +20,7 @@ const Form = () => {
                 <TextField label="Cargo" placeholder="Digite seu cargo"/>
                 <TextField label="Imagem" placeholder="Digite o endereço da imagem"/>
                 <DropdownList label="Time" itens={teams}/>
+                <TheFormButton texto="Criar Card"/>
             </form>
         </section>
     )
