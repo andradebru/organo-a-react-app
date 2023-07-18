@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6278F7;
+    height: 200px;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.footer p {
+    color: #fff;
+}
