@@ -8,7 +8,7 @@ const Form = (props) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('')
+    const [imagem, setImagem] = useState('http://')
     const [team, setTeam] = useState('')
 
     const aoSalvar = (evento) => {
@@ -19,6 +19,10 @@ const Form = (props) => {
             imagem,
             team
         })
+        setNome('')
+        setCargo('')
+        setImagem('http://')
+        setTeam('')
     }
 
     return (
