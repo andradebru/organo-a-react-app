@@ -1,8 +1,6 @@
 import './TextField.css'
 
 const TextField = (props) => {
-    // let valor = ''
-    // const [valor, setValor] = useState('')
 
     const aoDigitado = (evento) => {
         props.aoAlterado(evento.target.value)

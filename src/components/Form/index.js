@@ -4,7 +4,7 @@ import TextField from '../TextField'
 import DropdownList from '../DropdownList'
 import TheFormButton from '../FormButton'
 
-const Form = () => {
+const Form = (props) => {
 
     const teams = [
         'Team 1',
@@ -18,10 +18,14 @@ const Form = () => {
     const [imagem, setImagem] = useState('')
     const [team, setTeam] = useState('')
 
-
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log('form submetido: ', nome, cargo, imagem, team)
+        props.aPessoaCadastrada ({
+            nome,
+            cargo,
+            imagem,
+            team
+        })
     }
 
     return (
