@@ -40,11 +40,12 @@ function App() {
       <Banner />
       <Form teams={teams.map(team => team.nome )} aPessoaCadastrada={pessoa => aNovaPessoaCadastrada(pessoa)} />
       {
-        teams.map(team => 
-          <Team key={team.nome} 
+        teams.map(team => <Team 
+          key={team.nome} 
           nome={team.nome} 
           corPrimaria={team.corPrimaria}
           corSecundaria={team.corSecundaria}
+          pessoas={pessoas.filter(pessoa => pessoa.team === team.nome)}
         />)
       }
     </div>

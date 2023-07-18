@@ -8,3 +8,10 @@
     padding-bottom: 8px;
     border-bottom: 4px solid;
 }
+
+.team .pessoas {
+    display: flex;
+    justify-content: space-around;
+    align-items: 32px;
+    flex-wrap: wrap;
+}
