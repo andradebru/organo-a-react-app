@@ -6,13 +6,6 @@ import TheFormButton from '../FormButton'
 
 const Form = (props) => {
 
-    const teams = [
-        'Team 1',
-        'Team 2',
-        'Team 3',
-        'Team 4'
-    ]
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -55,7 +48,7 @@ const Form = (props) => {
                 <DropdownList
                     obrigatorio={true} 
                     label="Time" 
-                    itens={teams}
+                    itens={props.teams}
                     valor={team}
                     aoAlterado={valor => setTeam(valor)}
                 />

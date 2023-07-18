@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Form aPessoaCadastrada={pessoa => aNovaPessoaCadastrada(pessoa)} />
+      <Form teams={teams.map(team => team.nome )} aPessoaCadastrada={pessoa => aNovaPessoaCadastrada(pessoa)} />
       {
         teams.map(team => 
           <Team key={team.nome} 
