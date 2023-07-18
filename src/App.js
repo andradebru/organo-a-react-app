@@ -32,7 +32,6 @@ function App() {
   const [pessoas, setPessoas] = useState([]) 
   
   const aNovaPessoaCadastrada = (pessoa) => {
-    console.log(pessoa)
     setPessoas([...pessoas, pessoa])
   }
  
