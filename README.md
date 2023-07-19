@@ -1,8 +1,11 @@
+![logo](https://github.com/andradebru/organo/assets/77248375/7930991b-8915-4074-8ed5-e0638392cb89)
 # Organo
+
+![banner](https://github.com/andradebru/organo/assets/77248375/ea81f8f9-7d69-4f76-bc39-cca733cbaa05)
 
 Criador de organograma: crie cards dos colaboradores e veja os times organizados automaticamente.
 Desenvolvido com React e Javascript durante o curso da Alura.
-![localhost_3000_](https://github.com/andradebru/organo/assets/77248375/10b63379-d767-407f-bd69-195c5966653f)
+![localhost_3000_2](https://github.com/andradebru/organo/assets/77248375/c3ebd373-58f0-49bf-83c3-3d9d36a4201b)
 
 ## 📁 Acesso ao projeto
 
