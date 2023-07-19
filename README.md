@@ -24,4 +24,4 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ## 📚 Mais informações do curso
-[React: desenvolvendo com JavaScript]([http://localhost:3000]https://cursos.alura.com.br/course/react-desenvolvendo-javascript) 
+[React: desenvolvendo com JavaScript](https://cursos.alura.com.br/course/react-desenvolvendo-javascript) 
