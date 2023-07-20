@@ -3,7 +3,7 @@ import Pessoa from '../Pessoa'
 
 const Team = (props) => {
     return (
-        (props.pessoas.length > 0) ? 
+        (props.pessoas.length > 0) && 
         <section className='team' style={{ backgroundColor: props.corSecundaria}}>
              <h3 style={{ borderColor: props.corPrimaria }}>
                 {props.nome}
@@ -14,7 +14,6 @@ const Team = (props) => {
                 />)}
             </div>
         </section>
-        : ''
     )
 }
 
