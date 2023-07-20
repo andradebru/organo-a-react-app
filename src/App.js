@@ -8,22 +8,22 @@ function App() {
 
   const teams = [
     {
-      nome: 'Team 1',
+      nome: 'Time 1',
       corPrimaria: '#57C278',
       corSecundaria: '#D9F7E9',
     },
     {
-      nome: 'Team 2',
+      nome: 'Time 2',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8f8ff',
     },
     {
-      nome: 'Team 3',
+      nome: 'Time 3',
       corPrimaria: '#e06b69',
       corSecundaria: '#fde7e8',
     },
     {
-      nome: 'Team 4',
+      nome: 'Time 4',
       corPrimaria: '#db6ebf',
       corSecundaria: '#fae9f5',
     },
