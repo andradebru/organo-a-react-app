@@ -37,6 +37,7 @@ function App() {
  
   return (
     <div className="App">
+      <h1>aaaaaaaaaaaa</h1>
       <Banner />
       <Form teams={teams.map(team => team.nome )} aPessoaCadastrada={pessoa => aNovaPessoaCadastrada(pessoa)} />
       {
