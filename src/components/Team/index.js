@@ -9,9 +9,16 @@ const Team = (props) => {
                 {props.nome}
             </h3>
             <div className='pessoas'>
-                {props.pessoas.map( pessoa => 
-                <Pessoa key={pessoa.nome} corDeFundo={props.corPrimaria} nome={pessoa.nome} cargo={pessoa.cargo} imagem={pessoa.imagem}
-                />)}
+                {props.pessoas.map( pessoa => {
+                    return < Pessoa 
+                        key={pessoa.nome} 
+                        corDeFundo={props.corPrimaria} 
+                        nome={pessoa.nome}
+                        cargo={pessoa.cargo} 
+                        imagem={pessoa.imagem}
+                        deletarPessoa={props.aoDeletar}
+                    />
+                })}
             </div>
         </section>
     )

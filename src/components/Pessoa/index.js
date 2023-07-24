@@ -1,7 +1,11 @@
 import './Pessoa.css'
 
-const Pessoa = ({ nome, imagem, cargo, corDeFundo }) => {
+const Pessoa = ({ nome, imagem, cargo, corDeFundo, deletarPessoa}) => {
     return (<div className='pessoa'>
+        <div className='delete' 
+        onClick={deletarPessoa}>
+            deletar
+        </div>
         <div className='cabecalho' style={{backgroundColor: corDeFundo}}>
             <img src={imagem} alt={nome}/>
         </div>
