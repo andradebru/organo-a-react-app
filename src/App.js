@@ -38,15 +38,7 @@ function App() {
   function deletarPessoa(id) {
     setPessoas(pessoas.filter(pessoa => pessoa.id !== id))
   }
- 
-  // function changeTeamColor(color, nome) {
-  //   setTeams(teams.map(team => {
-  //     if(team.nome === nome) {
-  //       team.corSecundaria = color;
-  //     }
-  //     return team;
-  //   }));
-
+  
   return (
     <div className="App">
       <Banner />
@@ -54,7 +46,6 @@ function App() {
       {
         teams.map(team => 
           <Team
-            // mudarCor={changeTeamColor}
             key={team.nome} 
             nome={team.nome} 
             corPrimaria={team.corPrimaria}
@@ -68,6 +59,5 @@ function App() {
     </div>
   );
 }
-// }
 
 export default App;
