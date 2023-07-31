@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 function App() {
 
-  const teams = [
+  const [teams, setTeams] = useState ([
     {
       nome: 'Time 1',
       corPrimaria: '#57C278',
@@ -27,7 +27,7 @@ function App() {
       corPrimaria: '#db6ebf',
       corSecundaria: '#fae9f5',
     },
-  ]
+  ])
 
   const [pessoas, setPessoas] = useState([]) 
   
@@ -35,10 +35,18 @@ function App() {
     setPessoas([...pessoas, pessoa])
   }
 
-  function deletarPessoa() {
-    console.log('tchau fulani');
+  function deletarPessoa(id) {
+    setPessoas(pessoas.filter(pessoa => pessoa.id !== id))
   }
  
+  // function changeTeamColor(color, nome) {
+  //   setTeams(teams.map(team => {
+  //     if(team.nome === nome) {
+  //       team.corSecundaria = color;
+  //     }
+  //     return team;
+  //   }));
+
   return (
     <div className="App">
       <Banner />
@@ -46,6 +54,7 @@ function App() {
       {
         teams.map(team => 
           <Team
+            // mudarCor={changeTeamColor}
             key={team.nome} 
             nome={team.nome} 
             corPrimaria={team.corPrimaria}
@@ -59,5 +68,6 @@ function App() {
     </div>
   );
 }
+// }
 
 export default App;
