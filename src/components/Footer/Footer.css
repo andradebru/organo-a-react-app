@@ -14,6 +14,15 @@
     width: 30px;
 }
 
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
 .footer p {
     color: #fff;
 }
